@@ -18,6 +18,7 @@ app.get('/api/public', (req, res) => {
   res.json({ message: 'Hello from a public endpoint! You don\'t need to be authenticated to see this.' });
 });
 
+
 // Protected route
 app.get('/api/private', checkJwt, (req, res) => {
   res.json({ message: 'Hello from a private endpoint! You need to be authenticated to see this.' });
