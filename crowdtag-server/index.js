@@ -21,7 +21,7 @@ app.get('/api/public', (req, res) => {
 
 // Protected route
 app.get('/api/private', checkJwt, (req, res) => {
-  res.json({ message: 'Hello from a private endpoint! You need to be authenticated to see this.' });
+  res.json({ message: 'Hello from a private endpoint! You need to be authenticated to see this!' });
 });
 
 // Protected route with scope check
