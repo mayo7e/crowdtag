@@ -1,6 +1,6 @@
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/globalStyles";
@@ -14,7 +14,7 @@ import Profile from "./pages/Profile/Profile";
 const App = () => {
   const [theme, setTheme] = useState("dark");
 
-  const { isLoading, user, isAuthenticated, error } = useAuth0();
+  const { isLoading, user, isAuthenticated, error,  } = useAuth0();
 
   if (error) {
     return <div>Oops... {error.message}</div>;
