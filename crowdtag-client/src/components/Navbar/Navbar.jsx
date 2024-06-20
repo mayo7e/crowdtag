@@ -81,9 +81,7 @@ const Navbar = ({toggleTheme}) => {
                 <NavItem>
                   <Button onClick={handleSignUp}>Sign Up</Button>
                 </NavItem>
-                <NavItem>
-                  <Button onClick={handleLogout}>Log Out</Button>
-                </NavItem>
+          
               </>
             ) : (
               <>

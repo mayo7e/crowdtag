@@ -21,7 +21,7 @@ app.get('/api/public', (req, res) => {
 
 // Protected route
 app.get('/api/private', checkJwt, (req, res) => {
-  res.json({ message: 'Hello from a private endpoint! You need to be authenticated to see this.' });
+  res.json({ message: 'Hello from a private endpoint! You need to be authenticated to see this!' });
 });
 
 // Protected route with scope check
@@ -32,5 +32,5 @@ app.get('/api/private-scoped', checkJwt, checkScopes, (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port, ${PORT}`);
 });
